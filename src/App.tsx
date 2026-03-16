@@ -13,6 +13,9 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Scene } from './components/Scene';
+import mark from './mark.jpg';
+import nisrine from './nisrine.jpg'
+import jan from './jan.jpg'
 
 const features = [
   {
@@ -86,21 +89,27 @@ const programmers = [
   {
     name: "Vynce Ian Oani",
     role: "Lead Developer",
-    image: "https://picsum.photos/seed/vynce/400/400",
+    image: "https://vynceoani.vercel.app/static/media/prof.5c58069664fec4d98bf1.jpg",
     bio: "Specializing in NLP and Full-stack development."
   },
   {
-    name: "Team Member 1",
+    name: "Mark James B. Asumbrado",
     role: "UI/UX Designer",
-    image: "https://picsum.photos/seed/member1/400/400",
+    image: mark,
     bio: "Crafting intuitive experiences for youth engagement."
   },
   {
-    name: "Team Member 2",
-    role: "Backend Engineer",
-    image: "https://picsum.photos/seed/member2/400/400",
-    bio: "Building robust systems for real-time analytics."
-  }
+    name: "Jan Marei P. Vismanos",
+    role: "Full-stack Developer",
+    image: jan,
+    bio: "Specializing in Full-stack development."
+  },
+   {
+    name: "Nisrine A. Bacasmo",
+    role: "UI/UX Designer",
+    image: nisrine,
+    bio: "Crafting intuitive experiences for youth engagement."
+  },
 ];
 
 export default function App() {
@@ -129,9 +138,13 @@ export default function App() {
             <a href="#features" className="hover:text-blue-600 transition-colors">Features</a>
             <a href="#highlights" className="hover:text-blue-600 transition-colors">Highlights</a>
             <a href="#programmers" className="hover:text-blue-600 transition-colors">Programmers</a>
-            <button className="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+            <a 
+              href="https://drive.google.com/uc?export=download&id=1PDKBoOgsgCMS4FNtGpbgbtnJRjjcIRTm" 
+              download="SKonnect.apk"
+              className="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 inline-block"
+            >
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       </nav>
