@@ -13,6 +13,9 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Scene } from './components/Scene';
+import mark from './assets/mark.jpg';
+import jan from './assets/jan.jpg';
+import nisrine from './assets/nisrine.jpg';
 
 const features = [
   {
@@ -92,19 +95,19 @@ const programmers = [
   {
     name: "Mark James B. Asumbrado",
     role: "UI/UX Designer",
-    image: "/mark.jpg",
+    image: mark,
     bio: "Crafting intuitive experiences for youth engagement."
   },
   {
     name: "Jan Marei P. Vismanos",
     role: "Full-stack Developer",
-    image: "/jan.jpg",
+    image: jan,
     bio: "Specializing in Full-stack development."
   },
   {
     name: "Nisrine A. Bacasmo",
     role: "UI/UX Designer",
-    image: "/nisrine.jpg",
+    image: nisrine,
     bio: "Crafting intuitive experiences for youth engagement."
   },
 ];
