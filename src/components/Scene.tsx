@@ -47,16 +47,17 @@ const Phone = () => {
   
   useFrame((state) => {
     if (!meshRef.current) return;
-    const scroll = window.scrollY;
     const time = state.clock.getElapsedTime();
     
     // Responsive positioning logic using viewport
     const isMobile = viewport.width < 5;
-    const targetX = isMobile ? 0 : viewport.width * 0.2;
-    const targetY = isMobile ? -0.5 : 0.2;
-    const targetScale = isMobile ? 1.2 : 1.5;
+    const targetX = 0; // Centered in its container
+    const targetY = isMobile ? -0.2 : 0;
+    const targetScale = isMobile ? 1.6 : 2.2;
     
-    meshRef.current.rotation.y = -Math.PI * 0.05 - scroll * 0.001;
+    // Fixed rotation with initial spin on open
+    const initialSpin = Math.max(0, Math.PI * 4 * Math.exp(-time * 1.5));
+    meshRef.current.rotation.y = -Math.PI * 0.05 + initialSpin;
     meshRef.current.rotation.x = Math.sin(time * 0.5) * 0.05;
     
     meshRef.current.position.x = THREE.MathUtils.lerp(meshRef.current.position.x, targetX, 0.1);
@@ -67,7 +68,7 @@ const Phone = () => {
   });
 
   return (
-    <group ref={meshRef} position={[0, 0, 0]} rotation={[0, -Math.PI * 0.05, 0]}>
+    <group ref={meshRef} position={[0, 0, 0]}>
       {/* Metallic Frame (Silver/Titanium) */}
       <RoundedBox args={[0.85, 1.7, 0.12]} radius={0.12} smoothness={4}>
         <meshStandardMaterial color="#cbd5e1" metalness={1} roughness={0.1} />
@@ -111,9 +112,9 @@ const Phone = () => {
 
 export const Scene = () => {
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none">
-      <Canvas shadows>
-        <PerspectiveCamera makeDefault position={[0, 0, 6]} fov={45} />
+    <div className="absolute inset-0 w-full h-full pointer-events-none">
+      <Canvas shadows dpr={[1, 2]}>
+        <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={45} />
         <Suspense fallback={null}>
           <Environment preset="city" />
           <Float speed={1.2} rotationIntensity={0.3} floatIntensity={0.4}>

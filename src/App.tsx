@@ -11,11 +11,8 @@ import {
   CheckCircle2,
   ArrowRight
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { Scene } from './components/Scene';
-import mark from './assets/mark.jpg';
-import jan from './assets/jan.jpg';
-import nisrine from './assets/nisrine.jpg';
 
 const features = [
   {
@@ -69,7 +66,7 @@ const objectives = [
 const highlights = [
   {
     url: "https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/598785099_1906410523290419_2376670939581706112_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEg4k_S3BtP1BeKarqMm1cvftJ1srN1v1J-0nWys3W_UjM60hyoI68xW8dEJ61uiMBjjqv7Aljt5M5iToDLe0Xy&_nc_ohc=e6MBcVDZP40Q7kNvwHCgnni&_nc_oc=AdlFjOX33kBgGst6CbkQvW6-tgNZKnY8Pq4vM2OUKT3bXY4_Kxu_NqoJ5apzAopKANs&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_ss=8&oh=03_Q7cD4wETQn70lXkNKfy5GCEhIgDAUUnU9dHYF-TeeBgVXd6ERg&oe=69DF20DD",
-    caption: "Digital QR Verification in Action"
+    caption: "Official Platform Certification"
   },
   {
     url: "https://scontent.fcgy2-4.fna.fbcdn.net/v/t1.15752-9/611201158_1431444001659228_7241598378663434560_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGmFPtL1vXYJKELom8fqJWRSL798-XOzB9Ivv3z5c7MH16Np8cULKngKnb8MS9HilqPbv3ka78GwQTkSy0kpcX5&_nc_ohc=zlH1jsDfmycQ7kNvwGtVwKL&_nc_oc=AdlkbGBTlOLJssw210Ud4g8aZ8KbQlookcy2GHVoc1d3MXRTCgtMpQQF78IyexhIv2I&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_ss=8&oh=03_Q7cD4wH6qiyRDJZxeeMfmAyW6ew3wGGkI8rRkPAwzkQXXiyJpA&oe=69DF2E64",
@@ -81,7 +78,11 @@ const highlights = [
   },
   {
     url: "https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/610777013_1586949222330280_7038115126116895149_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEN36Z2X5qCwrRi-BApNvwgDTzyZucwWsYNPPJm5zBaxlcEGVzLK2jnqzYdkwYqcABMkjAnHT24Whjh_sUDRYTR&_nc_ohc=bKOGTw9TzTgQ7kNvwHBK4kc&_nc_oc=Adl5Hv5rUg_0yFpwdOT_8disO9tWXeoukNy59wNJE-_5olc9HO6S4tqlnPMUbJIjUmU&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_ss=8&oh=03_Q7cD4wGfLlzinDtiuKo0g-Ox0Dzv3aipYAKXP6eDocOAo078ig&oe=69DF1736",
-    caption: "Official Platform Certification"
+    caption: "Youth General Assembly 2025"
+  },
+  {
+    url:"https://scontent.fcgy4-1.fna.fbcdn.net/v/t1.15752-9/604715870_4191324084440933_2524993201913085682_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHEzePw1l_-w-BJPGFVWv_X53CdJu2Y44jncJ0m7ZjjiIG-KOFDsS0TEvf90SE7oGiwYa2puY-8mPHE0Sf4RIFC&_nc_ohc=k-XlIrJQ8H4Q7kNvwHZJM4j&_nc_oc=Adnc6E4xuD6QdCXqPceztSrgQqJDuBt9XYgkTX3MV2ShwrI5phQvo9y8LFs7N1-elTc&_nc_zt=23&_nc_ht=scontent.fcgy4-1.fna&_nc_ss=8&oh=03_Q7cD4wF5t3QSw9KZiG5xmNXaFO-fQU97PwwpTG51lUnpvHPmEQ&oe=69DF8C0F",
+    caption: "Year End Gathering Of The SK Buhangin Proper"
   }
 ];
 
@@ -95,42 +96,38 @@ const programmers = [
   {
     name: "Mark James B. Asumbrado",
     role: "UI/UX Designer",
-    image: mark,
+    image: 'https://i.ibb.co/LXmTcX5r/b857ac8d-1963-45df-a7b0-8ef3140c0516.jpg',
     bio: "Crafting intuitive experiences for youth engagement."
   },
   {
     name: "Jan Marei P. Vismanos",
     role: "Full-stack Developer",
-    image: jan,
+    image: 'https://i.ibb.co/XkLccnrS/37807555-42f2-49f0-ac84-a4b84a961925.jpg',
     bio: "Specializing in Full-stack development."
   },
   {
     name: "Nisrine A. Bacasmo",
     role: "UI/UX Designer",
-    image: nisrine,
+    image: 'https://i.ibb.co/8gXtnwPX/370a07f5-e2c5-4a23-99dc-233977b9bd28.jpg',
     bio: "Crafting intuitive experiences for youth engagement."
   },
 ];
 
 export default function App() {
-  const [currentHighlight, setCurrentHighlight] = React.useState(0);
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentHighlight((prev) => (prev + 1) % highlights.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
+  // No longer needed for infinite carousel
 
   return (
     <div className="min-h-screen font-sans selection:bg-blue-100 selection:text-blue-900">
-      <Scene />
-      
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass border-b border-slate-200/50">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">S</div>
+            <img 
+              src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXinF3SEcPViGSXnU8pxP%2Bfh1hZyHWxE%2FNhWLF%2F9fT2%2BU4L1vMY70JMYPmEWKYUGxIcSklZdL7EIpnV%2BjnCNR48opaUZGQm77Jlnm6uWKUKr%2BdrzCFfrtgM6VKzJ8vFkBkCDvjvhAo37urZ90fWUNXmI634YDCIJJCGxllLXX%2FCCAy4vt1IvK6W%2FcnMfVy1VYRqQm%2BXspFggQNjnvjPlfyHyzLV7e%2BTDcrBT9lqp7f7aAfTltY89rrVRxD0T6CHR%2BnY7QxkUT30IfqvcAzOUGZjDmHUGKD0wwA31dfZ0HOORKQeMIIM34sXDPwv4Pf9vSJxdjB4SgV0%2BpzL0U3yafYrUvnild28d8LHJzLDSocBbjEQKvd4di3Z89U5nSe6KsQDEwraopTughWuFcrXRC%2B%2F4r4en%2BQHbsOXa19A4A9kt9FlKBcUfC3T6qcWGug0xImOYVruDD9fjj7CTcxLWVPPIyrORLKmkUrM0PyOTNfPvYEFVKC%2FgVeuV2o%2BrRupLeRVrUun2HlD2ETARh8ujBv1PeFGnkHMUSyZZXquvyhJEMSA8c7QMByLvTpsAv%2FtHd%2FLrr6%2BrHjzQOQ%3D&allow_caching=true&sz=w512" 
+              alt="SKonnect Logo" 
+              className="w-10 h-10 object-contain"
+              referrerPolicy="no-referrer"
+            />
             <span className="font-display font-bold text-2xl tracking-tight">SKonnect</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
@@ -156,6 +153,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="z-10"
           >
             <span className="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-wider mb-6">
               Smart Youth Engagement Platform
@@ -167,17 +165,18 @@ export default function App() {
               SKonnect bridges the gap between Sangguniang Kabataan leaders and the youth using advanced machine learning, real-time analytics, and interactive engagement tools.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all flex items-center gap-2 group">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1PDKBoOgsgCMS4FNtGpbgbtnJRjjcIRTm" 
+                download="SKonnect.apk"
+                className="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all flex items-center gap-2 group"
+              >
                 Explore Platform <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all">
-                View Case Study
-              </button>
+              </a>
             </div>
           </motion.div>
           
-          <div className="relative hidden lg:block">
-            {/* The 3D models from Scene.tsx will be visible here */}
+          <div className="relative h-[500px] lg:h-[700px] w-full">
+            <Scene />
           </div>
         </div>
       </section>
@@ -206,8 +205,12 @@ export default function App() {
               </div>
             </div>
             <div className="bg-slate-800/50 p-8 rounded-3xl border border-slate-700">
-              <div className="aspect-video bg-slate-700 rounded-xl flex items-center justify-center">
-                <span className="text-slate-500 font-mono text-sm">UTAUT Model Framework</span>
+              <div className="aspect-video bg-slate-700 rounded-xl overflow-hidden">
+                <img 
+  src="https://i.ibb.co/Q37FQdFp/Conceptual-Framework-1.png"
+  alt="UTAUT Model Framework"
+  className="w-full h-full object-contain"
+/>
               </div>
               <p className="mt-6 text-slate-400 text-sm italic">
                 Evaluating performance expectancy, effort expectancy, social influence, and facilitating conditions.
@@ -245,7 +248,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Highlights Section - Scroll Carousel */}
+      {/* Highlights Section - Infinite Marquee Carousel */}
       <section id="highlights" className="py-24 bg-blue-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
@@ -260,39 +263,27 @@ export default function App() {
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto px-6">
-            <div className="relative aspect-[16/10] overflow-hidden rounded-3xl bg-black/20 border border-white/10 shadow-2xl">
-              <AnimatePresence mode="wait">
-                <motion.div 
-                  key={currentHighlight}
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -50 }}
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
-                  className="absolute inset-0 flex items-center justify-center p-6"
-                >
-                  <img 
-                    src={highlights[currentHighlight].url} 
-                    alt={highlights[currentHighlight].caption}
-                    className="max-w-full max-h-full object-contain"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-6 pt-16">
-                    <p className="text-white font-bold text-lg md:text-xl text-center">
-                      {highlights[currentHighlight].caption}
-                    </p>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-            
-            <div className="flex justify-center gap-2 mt-8">
-              {highlights.map((_, i) => (
-                <button 
+          <div className="flex overflow-hidden">
+            <div className="flex animate-marquee whitespace-nowrap">
+              {[...highlights, ...highlights].map((highlight, i) => (
+                <div 
                   key={i} 
-                  onClick={() => setCurrentHighlight(i)}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${i === currentHighlight ? 'bg-white w-8' : 'bg-white/20 w-2.5 hover:bg-white/40'}`}
-                />
+                  className="flex-shrink-0 w-[300px] md:w-[450px] px-4"
+                >
+                  <div className="relative aspect-[16/10] overflow-hidden rounded-3xl bg-black/20 border border-white/10 shadow-xl group">
+                    <img 
+                      src={highlight.url} 
+                      alt={highlight.caption}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-transparent p-6">
+                      <p className="text-white font-bold text-sm md:text-base">
+                        {highlight.caption}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
@@ -342,7 +333,12 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="col-span-2">
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">S</div>
+                <img 
+                  src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXinF3SEcPViGSXnU8pxP%2Bfh1hZyHWxE%2FNhWLF%2F9fT2%2BU4L1vMY70JMYPmEWKYUGxIcSklZdL7EIpnV%2BjnCNR48opaUZGQm77Jlnm6uWKUKr%2BdrzCFfrtgM6VKzJ8vFkBkCDvjvhAo37urZ90fWUNXmI634YDCIJJCGxllLXX%2FCCAy4vt1IvK6W%2FcnMfVy1VYRqQm%2BXspFggQNjnvjPlfyHyzLV7e%2BTDcrBT9lqp7f7aAfTltY89rrVRxD0T6CHR%2BnY7QxkUT30IfqvcAzOUGZjDmHUGKD0wwA31dfZ0HOORKQeMIIM34sXDPwv4Pf9vSJxdjB4SgV0%2BpzL0U3yafYrUvnild28d8LHJzLDSocBbjEQKvd4di3Z89U5nSe6KsQDEwraopTughWuFcrXRC%2B%2F4r4en%2BQHbsOXa19A4A9kt9FlKBcUfC3T6qcWGug0xImOYVruDD9fjj7CTcxLWVPPIyrORLKmkUrM0PyOTNfPvYEFVKC%2FgVeuV2o%2BrRupLeRVrUun2HlD2ETARh8ujBv1PeFGnkHMUSyZZXquvyhJEMSA8c7QMByLvTpsAv%2FtHd%2FLrr6%2BrHjzQOQ%3D&allow_caching=true&sz=w512" 
+                  alt="SKonnect Logo" 
+                  className="w-8 h-8 object-contain"
+                  referrerPolicy="no-referrer"
+                />
                 <span className="font-display font-bold text-xl tracking-tight">SKonnect</span>
               </div>
               <p className="text-slate-500 max-w-md leading-relaxed">
@@ -363,16 +359,14 @@ export default function App() {
               <h4 className="font-bold mb-6">Contact</h4>
               <ul className="space-y-4 text-slate-500 text-sm">
                 <li>Barangay Leadership Center</li>
-                <li>skonnect.support@gov.ph</li>
-                <li>+63 (02) 8888-9999</li>
+                <li>skonnect-admin@gmail.com</li>
               </ul>
             </div>
           </div>
           <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-xs uppercase tracking-widest font-bold">
             <p>© 2026 SKonnect Platform. All rights reserved.</p>
             <div className="flex gap-8">
-              <a href="#" className="hover:text-slate-600 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-slate-600 transition-colors">Terms of Service</a>
+
             </div>
           </div>
         </div>
