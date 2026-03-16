@@ -82,6 +82,27 @@ const highlights = [
   }
 ];
 
+const programmers = [
+  {
+    name: "Vynce Ian Oani",
+    role: "Lead Developer",
+    image: "https://picsum.photos/seed/vynce/400/400",
+    bio: "Specializing in NLP and Full-stack development."
+  },
+  {
+    name: "Team Member 1",
+    role: "UI/UX Designer",
+    image: "https://picsum.photos/seed/member1/400/400",
+    bio: "Crafting intuitive experiences for youth engagement."
+  },
+  {
+    name: "Team Member 2",
+    role: "Backend Engineer",
+    image: "https://picsum.photos/seed/member2/400/400",
+    bio: "Building robust systems for real-time analytics."
+  }
+];
+
 export default function App() {
   const [currentHighlight, setCurrentHighlight] = React.useState(0);
 
@@ -107,6 +128,7 @@ export default function App() {
             <a href="#objectives" className="hover:text-blue-600 transition-colors">Objectives</a>
             <a href="#features" className="hover:text-blue-600 transition-colors">Features</a>
             <a href="#highlights" className="hover:text-blue-600 transition-colors">Highlights</a>
+            <a href="#programmers" className="hover:text-blue-600 transition-colors">Programmers</a>
             <button className="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
               Get Started
             </button>
@@ -264,6 +286,43 @@ export default function App() {
         </div>
       </section>
 
+      {/* Programmers Section */}
+      <section id="programmers" className="py-24 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="font-display text-4xl font-bold mb-4">The Development Team</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Meet the brilliant minds behind SKonnect, dedicated to transforming youth governance through technology.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-12">
+            {programmers.map((dev, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="text-center group"
+              >
+                <div className="relative mb-6 inline-block">
+                  <div className="absolute inset-0 bg-blue-600 rounded-3xl rotate-6 group-hover:rotate-0 transition-transform duration-300"></div>
+                  <img 
+                    src={dev.image} 
+                    alt={dev.name}
+                    className="relative w-48 h-48 object-cover rounded-3xl border-2 border-white shadow-xl"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <h3 className="font-display text-2xl font-bold mb-2">{dev.name}</h3>
+                <p className="text-blue-600 font-bold text-sm uppercase tracking-widest mb-4">{dev.role}</p>
+                <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">{dev.bio}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-20 px-6 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto">
@@ -284,6 +343,7 @@ export default function App() {
                 <li><a href="#objectives" className="hover:text-blue-600 transition-colors">Objectives</a></li>
                 <li><a href="#features" className="hover:text-blue-600 transition-colors">Features</a></li>
                 <li><a href="#highlights" className="hover:text-blue-600 transition-colors">Highlights</a></li>
+                <li><a href="#programmers" className="hover:text-blue-600 transition-colors">Programmers</a></li>
               </ul>
             </div>
             <div>
